@@ -22,6 +22,17 @@ function App() {
           path:'/quizes',
           loader: () => fetch ('https://openapi.programming-hero.com/api/quiz'),
           element: <Quizes></Quizes>,
+        },
+        
+
+        {
+          path:'/*',
+          element: <div className='h-screen flex flex-col justify-center items-center'>
+            <div className=''>
+            <h1 className='text-3xl text-bold'>Oops !!! Route not Found</h1>
+            <p>Please provide a valid route</p>
+            </div>
+          </div>
         }
       ]
     }
