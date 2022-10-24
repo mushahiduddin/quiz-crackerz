@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Quizes from './Components/Quizes/Quizes';
+import QuizDetails from './Components/QuizDetails/QuizDetails';
 
 
 
@@ -23,14 +24,19 @@ function App() {
           loader: () => fetch ('https://openapi.programming-hero.com/api/quiz'),
           element: <Quizes></Quizes>,
         },
-        
-
+        {
+          path:'/quizes/:quizId',
+          loader: async ({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element: <QuizDetails></QuizDetails>
+        },
         {
           path:'/*',
           element: <div className='h-screen flex flex-col justify-center items-center'>
             <div className=''>
-            <h1 className='text-3xl text-bold'>Oops !!! Route not Found</h1>
-            <p>Please provide a valid route</p>
+            <h1 className='text-3xl text-bold'>Oops !!! This Route is not Found ...</h1>
+            <p>Please go through Link</p>
             </div>
           </div>
         }

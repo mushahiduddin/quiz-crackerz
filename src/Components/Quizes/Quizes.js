@@ -4,7 +4,6 @@ import Quiz from '../Quiz/Quiz';
 
 const Quizes = () => {
     const quizes = useLoaderData().data;
-    console.log(quizes);
     return (
         <div className='block'>
             <div className='flex flex-col gap-8'>
