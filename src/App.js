@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Quizes from './Components/Quizes/Quizes';
 import QuizDetails from './Components/QuizDetails/QuizDetails';
+import Chart from './Components/Chart/Chart';
 
 
 
@@ -30,6 +31,11 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <QuizDetails></QuizDetails>
+        },
+        {
+          path:'/statistics',
+          loader: () => fetch ('https://openapi.programming-hero.com/api/quiz'),
+          element: <Chart></Chart>,
         },
         {
           path:'/*',

@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const SingleQuiz = ({ singleQuiz }) => {
     const { question, options, correctAnswer } = singleQuiz;
-    console.log(correctAnswer);
     const notify = (e) => {
         if (e.target.innerText === correctAnswer.replace(/\s+/g, ' ').trim()) {
             toast("Wow Genious !! Your answer Is Correct. ");
