@@ -4,7 +4,6 @@ import SingleQuiz from '../SingleQuiz/SingleQuiz';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData().data.questions;
-    console.log(quizDetails);
     return (
         <div>
              {

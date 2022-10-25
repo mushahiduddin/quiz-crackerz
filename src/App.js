@@ -36,7 +36,7 @@ function App() {
           element: <div className='h-screen flex flex-col justify-center items-center'>
             <div className=''>
             <h1 className='text-3xl text-bold'>Oops !!! This Route is not Found ...</h1>
-            <p>Please go through Link</p>
+            <p>Please go through Menu Link</p>
             </div>
           </div>
         }
