@@ -2,7 +2,7 @@
 
 =>Project On : Quiz Perform application
 
-=>Live Link: https://quizu-judge.netlify.app/home
+=>Live Link: https://quizu-judge.netlify.app/quizes
 
 =>Covered on this project:
     1. Data load from Api by react router dom
