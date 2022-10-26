@@ -5,7 +5,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const Chart = () => {
     const quizes = useLoaderData().data;
     return (
-        <div className='w-9/12 mx-auto py-12 text-black font-bold'>
+        <div className='w-3/4 mx-auto py-12 text-black font-bold'>
             <ResponsiveContainer height={300}>
                 <LineChart
                     data={quizes}
