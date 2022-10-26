@@ -6,7 +6,7 @@ const Chart = () => {
     const quizes = useLoaderData().data;
     return (
         <div className='w-3/4 mx-auto py-12 text-black font-bold'>
-            <ResponsiveContainer height={300}>
+            <ResponsiveContainer height={500}>
                 <LineChart
                     data={quizes}
                 >
