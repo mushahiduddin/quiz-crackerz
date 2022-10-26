@@ -10,7 +10,7 @@ const Header = () => {
                     <h2 className='text-4xl font-mono'>Quizu <span className='text-emerald-200'>Judge</span></h2>
                 </div>
                 <div className='text-2xl nav-items flex gap-4 items-center'>
-                    <NavLink to='/quizes'>Quizes</NavLink>
+                    <NavLink to='/quizes'>Home</NavLink>
                     <NavLink to='/statistics'>Statistics</NavLink>
                     <NavLink to='/blog'>Blog</NavLink>
                 </div>
